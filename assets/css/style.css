@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+.nav-buttons{
+    margin-left:60%; /* to push nav bar contents to rhs */   
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h6{
+    color: #d8d8d8;
+}
+button{
+    font-size: 0.3 rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+button:hover{
+    background-color: coral;
+}
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    /* using the !important declaration to ensure this style takes precedence over other conflicting styles. */
+    top:0;
+    left:0;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding:0 20px;
+    color:#000;
+    transition:0.4s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover{
+    color:coral !important;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0  0.7px 0 0.7px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-left: 5px;
+}
+@media only screen and (max-width:990px){
+    .nav-buttons{
+        margin: 10px;
+    }
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+         align-items: flex-start;
+        text-align: left; 
+    }
+    .nav-buttons ul .fav{
+        margin: 20px 5px 10px 20px;
+    }
+}
+#Home{
+    background-image: url('../images/home.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#Home span{
+    /* color:rgb(251, 144, 144); */
+    color: rgb(255, 102, 46);
+}
+#Home{
+    color: antiquewhite;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#new .one img{
+    width:100%;
+    height:100%;    
+    /* ^  gives  all images same height and width */
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+#new .one{
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(254, 111, 59);
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.6;
+    background-color: rgb(40, 39, 39);
+    width: 100%;
+    height: 100%;
+}
+#new .one .details:hover{
+    background-color: rgb(110, 110, 110);
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
